@@ -1,0 +1,39 @@
+---
+title: "teeth"
+author: "anniecgreene"
+date: "2020-09-15"
+output: workflowr::wflow_html
+editor_options:
+  chunk_output_type: console
+---
+
+```{r}
+data("ToothGrowth")
+write.csv(ToothGrowth, file = "data/teeth.csv")
+```
+
+## Introduction
+
+Here I am going to do an analysis of the teeth data
+
+First read the data
+```{r import-teeth}
+teeth <- read.csv("data/teeth.csv", row.names = 1) 
+head(teeth)
+```
+
+Now create some boxplots 
+```{r}
+boxplot(len ~ dose, data = teeth) 
+boxplot(len ~ supp, data = teeth) 
+boxplot(len ~ dose + supp, data = teeth)
+```
+
+```{r}
+# Observed difference in teeth length due to supplement method mean(teeth$len[teeth$supp == "OJ"]) - mean(teeth$len[teeth$supp == "VC"]) # Permute the observations
+supp_perm <- sample(teeth$supp)
+# Calculate mean difference in permuted data
+mean(teeth$len[supp_perm == "OJ"]) - mean(teeth$len[supp_perm == "VC"])
+```
+
+
