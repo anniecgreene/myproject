@@ -371,7 +371,7 @@ div.tocify {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/your-github-username/myproject">
+  <a href="https://github.com/anniecgreene/myproject">
     <span class="fa fa-github"></span>
      
     Source code
@@ -504,23 +504,27 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomyourgithubusernamemyprojecttreeed582d21773ecccc19fa4c042ce5a50b7d98a86ftargetblanked582d2a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/your-github-username/myproject/tree/ed582d21773ecccc19fa4c042ce5a50b7d98a86f" target="_blank">ed582d2</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomanniecgreenemyprojecttreea4c128b994d54df45a071c16120496653d1d5c39targetblanka4c128ba"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/anniecgreene/myproject/tree/a4c128b994d54df45a071c16120496653d1d5c39" target="_blank">a4c128b</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcomyourgithubusernamemyprojecttreeed582d21773ecccc19fa4c042ce5a50b7d98a86ftargetblanked582d2a" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomanniecgreenemyprojecttreea4c128b994d54df45a071c16120496653d1d5c39targetblanka4c128ba" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/your-github-username/myproject/tree/ed582d21773ecccc19fa4c042ce5a50b7d98a86f" target="_blank">ed582d2</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/anniecgreene/myproject/tree/a4c128b994d54df45a071c16120496653d1d5c39" target="_blank">a4c128b</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
 </p>
 <pre><code>
 Ignored files:
+    Ignored:    .Rhistory
     Ignored:    .Rproj.user/
+
+Unstaged changes:
+    Modified:   analysis/index.Rmd
 
 </code></pre>
 <p>
@@ -561,10 +565,27 @@ Message
 <tbody>
 <tr>
 <td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/anniecgreene/myproject/blob/a4c128b994d54df45a071c16120496653d1d5c39/analysis/teeth.Rmd" target="_blank">a4c128b</a>
+</td>
+<td>
+anniecgreene
+</td>
+<td>
+2020-09-15
+</td>
+<td>
+Analyze teeth growth
+</td>
+</tr>
+<tr>
+<td>
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/your-github-username/myproject/edb2b0df279862bd8e06a86f03f353e32baef9ae/docs/teeth.html" target="_blank">edb2b0d</a>
+<a href="https://rawcdn.githack.com/anniecgreene/myproject/f4643c3b211ddffc938f6e8d80332693ed7d5a46/docs/teeth.html" target="_blank">f4643c3</a>
 </td>
 <td>
 anniecgreene
@@ -581,7 +602,24 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/your-github-username/myproject/d8dedef1164a8828a19461514686e10399733e7d/docs/teeth.html" target="_blank">d8dedef</a>
+<a href="https://rawcdn.githack.com/anniecgreene/myproject/edb2b0df279862bd8e06a86f03f353e32baef9ae/docs/teeth.html" target="_blank">edb2b0d</a>
+</td>
+<td>
+anniecgreene
+</td>
+<td>
+2020-09-15
+</td>
+<td>
+Build site.
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/anniecgreene/myproject/d8dedef1164a8828a19461514686e10399733e7d/docs/teeth.html" target="_blank">d8dedef</a>
 </td>
 <td>
 anniecgreene
@@ -598,7 +636,7 @@ Build site.
 Rmd
 </td>
 <td>
-<a href="https://github.com/your-github-username/myproject/blob/97b802adb4ebaa7504decf3e679c44ff5cb6c506/analysis/teeth.Rmd" target="_blank">97b802a</a>
+<a href="https://github.com/anniecgreene/myproject/blob/97b802adb4ebaa7504decf3e679c44ff5cb6c506/analysis/teeth.Rmd" target="_blank">97b802a</a>
 </td>
 <td>
 anniecgreene
@@ -621,6 +659,7 @@ Analyze teeth growth
 write.csv(ToothGrowth, file = &quot;data/teeth.csv&quot;)</code></pre>
 <div id="introduction" class="section level2">
 <h2>Introduction</h2>
+<p>[Ashleigh’s Website]/ [My Website] ()</p>
 <p>Here I am going to do an analysis of the teeth data</p>
 <p>First read the data</p>
 <pre class="r"><code>teeth &lt;- read.csv(&quot;data/teeth.csv&quot;, row.names = 1) 
@@ -659,7 +698,7 @@ Date
 <tbody>
 <tr>
 <td>
-<a href="https://github.com/your-github-username/myproject/blob/d8dedef1164a8828a19461514686e10399733e7d/docs/figure/teeth.Rmd/unnamed-chunk-2-1.png" target="_blank">d8dedef</a>
+<a href="https://github.com/anniecgreene/myproject/blob/d8dedef1164a8828a19461514686e10399733e7d/docs/figure/teeth.Rmd/unnamed-chunk-2-1.png" target="_blank">d8dedef</a>
 </td>
 <td>
 anniecgreene
@@ -698,7 +737,7 @@ Date
 <tbody>
 <tr>
 <td>
-<a href="https://github.com/your-github-username/myproject/blob/d8dedef1164a8828a19461514686e10399733e7d/docs/figure/teeth.Rmd/unnamed-chunk-2-2.png" target="_blank">d8dedef</a>
+<a href="https://github.com/anniecgreene/myproject/blob/d8dedef1164a8828a19461514686e10399733e7d/docs/figure/teeth.Rmd/unnamed-chunk-2-2.png" target="_blank">d8dedef</a>
 </td>
 <td>
 anniecgreene
@@ -737,7 +776,7 @@ Date
 <tbody>
 <tr>
 <td>
-<a href="https://github.com/your-github-username/myproject/blob/d8dedef1164a8828a19461514686e10399733e7d/docs/figure/teeth.Rmd/unnamed-chunk-2-3.png" target="_blank">d8dedef</a>
+<a href="https://github.com/anniecgreene/myproject/blob/d8dedef1164a8828a19461514686e10399733e7d/docs/figure/teeth.Rmd/unnamed-chunk-2-3.png" target="_blank">d8dedef</a>
 </td>
 <td>
 anniecgreene
