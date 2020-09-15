@@ -15,8 +15,8 @@ write.csv(ToothGrowth, file = "data/teeth.csv")
 
 ## Introduction
 
-[Ashleigh's Website]/
-[My Website] ()
+[Ashleigh's Website](http://ashleighkorinna.github.io/myproject/)/
+[My Website](https://anniecgreene.github.io/myproject/)
 
 
 Here I am going to do an analysis of the teeth data
